@@ -478,6 +478,15 @@ function getProjectCoverImage(repo) {
     const description = (repo.description || "").toLowerCase();
 
     if (
+        repoName.includes("portfolio") ||
+        repoName.includes("my webpage") ||
+        repoName.includes("my web") ||
+        description.includes("portfolio website")
+    ) {
+        return "img/my_page.png";
+    }
+
+    if (
         repoName.includes("gold coral") ||
         repoName.includes("gold-coral") ||
         homepage.includes("goldcoral.vip") ||

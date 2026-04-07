@@ -642,6 +642,7 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .project-carousel-header h2 {
@@ -658,7 +659,9 @@ footer {
     font-size: 0.8rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    max-width: 100%;
 }
 
 .project-carousel-card.is-active {
